@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 16px;
+  border: black solid;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+} 
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  background-color: wheat;
+}
+
+.card_image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: brown solid;
+}
+
+.card_title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: brown;
+  font-family: 'Sono', sans-serif;
+}
+
+.card_body {
+  height: 400px; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  height: 150px;
+  overflow: hidden;
+  color: black;
+}
+
+.card_actions {
+  margin-top: auto;
+}
+
+.card_btn {
+  display: block;
+  padding: 10px 20px;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card_btn:hover {
+  background-color: #138496;
+}
+
